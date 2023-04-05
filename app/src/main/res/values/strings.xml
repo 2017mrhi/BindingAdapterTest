@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BindingAdapterTest</string>
+
+    <string name="btnTitle">글씨변경</string>
 </resources>

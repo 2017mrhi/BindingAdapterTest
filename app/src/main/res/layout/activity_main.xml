@@ -42,13 +42,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
-            android:onClick="@{()->vm.changeName()}"/>
+            android:onClick="@{()->vm.changeName()}"
+            btnTitle="@{@string/btnTitle}"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/teal_700"
-            android:onClick="@{()->vm.addItem()}"/>
+            android:onClick="@{()->vm.addItem()}"
+            app:btnTitle="@{`아이템추가`}"/>
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

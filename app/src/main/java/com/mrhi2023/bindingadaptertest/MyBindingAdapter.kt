@@ -1,5 +1,6 @@
 package com.mrhi2023.bindingadaptertest
 
+import android.widget.Button
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -17,5 +18,11 @@ object MyBindingAdapter {
     @JvmStatic
     fun setItemList(view:RecyclerView, items:MutableList<Item>){
         view.adapter= MyAdapter(view.context, items)
+    }
+
+    @BindingAdapter("btnTitle")
+    @JvmStatic
+    fun setButtonTitle(view:Button, title:String){
+        view.text= title
     }
 }
